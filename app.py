@@ -1,7 +1,5 @@
 import gradio as gr
 import torch
-import gradio as gr
-import torch
 from transformers import DonutProcessor, VisionEncoderDecoderModel
 from PIL import Image
 import json
