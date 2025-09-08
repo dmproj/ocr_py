@@ -1,9 +1,8 @@
-gradio==4.32.0
-torch==2.1.0
-torchvision==0.16.0
-transformers==4.38.0
-Pillow==10.0.1
-sentencepiece==0.1.99
-accelerate==0.27.0
-datasets==2.17.0
-huggingface-hub==0.20.0
+torch>=2.5.0
+torchvision>=0.20.0
+transformers>=4.40.0
+Pillow>=10.0.1
+sentencepiece>=0.1.99
+accelerate>=0.30.0
+datasets>=2.19.0
+huggingface-hub>=0.23.0
