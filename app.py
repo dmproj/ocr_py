@@ -1,5 +1,7 @@
 import gradio as gr
 import torch
+import gradio as gr
+import torch
 from transformers import DonutProcessor, VisionEncoderDecoderModel
 from PIL import Image
 import json
@@ -281,9 +283,11 @@ demo = gr.Interface(
 )
 
 if __name__ == "__main__":
+    import os
+    port = int(os.environ.get("PORT", 7860))
     demo.launch(
         server_name="0.0.0.0",
-        server_port=7860,
+        server_port=port,
         share=False,
         debug=False
     )
