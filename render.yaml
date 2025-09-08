@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: maritime-cv-parser
+    env: python
+    plan: free
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: PORT
+        value: 7860
